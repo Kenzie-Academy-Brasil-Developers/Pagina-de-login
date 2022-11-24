@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/globalStyles.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
-    <title>Login</title>
-</head>
-<body>
-    <script src="./src/scripts/modal.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Rumo ao Hexa Login</title>
+  </head>
+  <body>
+      <main>
+        <div class="title-description">
+          <img
+            src="/src/assets/img/1665079845_banner-rumo-ao-hexa_topo.jpg"
+            alt=""
+            width="540px"
+          />
+          <h3>
+            As nossas coleções de canecas são tão lindas que vai ser<br />
+            impossível não querer todas elas. Nossas canecas são produzidas<br />
+            em cerâmica de alta qualidade, super brilho, resistente ao uso em<br />
+            forno micro-ondas e máquina de lavar louças. Orgulhamo-nos
+            depossuir<br />
+            uma das melhores canecas do mercado. Tem caneca de chá,<br />
+            caneca pra dar de presente, caneca divertida, caneca com música<br />
+            e mais uma infinidade de opções para você se apaixonar e colecionar.
+          </h3>
+        </div>
+        <aside>
+          <div class="form-login">
+            <h1>Login</h1>
+            <label for="">Email:</label><br />
+            <input type="email" placeholder="Digite seu email..." /><br />
+            <label for="">Senha:</label><br />
+            <input type="password" placeholder="Digite sua senha..." />
+            <button data-show-modal="login" class="forgotit" type="submit">
+              Esqueceu a senha?
+            </button>
+            <button class="log">Logar</button>
+          </div>
+        </aside>
+      </main>
+      <div class="modal-wrapper" id="login">
+        <div class="modal">
+          <div class="title-close">
+            <h2 class="recovery-pass">Recupere sua senha</h2>
+            <button data-show-modal="login" class="close-modal">X</button>
+          </div>
+          <h3 class="text-recovery">
+            Insira seu email para recuperar sua senha
+          </h3>
+          <div class="recovery-email">
+            <input
+              class="input-recovery"
+              type="email"
+              placeholder="digite seu email..."
+            />
+            <h3 class="text-recovery">Clique em enviar para recuperar</h3>
+            <button class="but-recovery">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <script src="./src/scripts/modal.js"></script>
+  </body>
 </html>
